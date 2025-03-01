@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1740850495
+::res://::1740850606
 icon.svg::CompressedTexture2D::7190589056423357641::1740850400::1740850496::1::::<><>::
 JorgeMoveScript.cs::CSharpScript::-1::1740850400::0::1::::<><>::
 README.md::TextFile::-1::1740850400::0::1::::<><>::
@@ -11,3 +11,5 @@ THIRDPARTY.md::TextFile::-1::1740850400::0::1::::<><>::
 ::res://addons/godot-git-plugin/linux/::1740850407
 ::res://addons/godot-git-plugin/macos/::1740850407
 ::res://addons/godot-git-plugin/win64/::1740850407
+::res://script/::1740850601
+::res://texture/::1740850597
