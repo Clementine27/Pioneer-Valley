@@ -1,0 +1,51 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://ccfxptt3gm2nv"]
+
+[ext_resource type="Texture2D" uid="uid://bkurfsra2ie4y" path="res://texture/goose.png" id="1_uf6ut"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r1eot"]
+atlas = ExtResource("1_uf6ut")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hkul8"]
+atlas = ExtResource("1_uf6ut")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bw6se"]
+atlas = ExtResource("1_uf6ut")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ag1c4"]
+atlas = ExtResource("1_uf6ut")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0auf6"]
+atlas = ExtResource("1_uf6ut")
+region = Rect2(64, 32, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r1eot")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hkul8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bw6se")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ag1c4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0auf6")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 4.0
+}]

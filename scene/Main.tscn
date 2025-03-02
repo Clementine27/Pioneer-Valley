@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://dtvivs5hiped6"]
+[gd_scene load_steps=2 format=3 uid="uid://dtvivs5hiped6"]
+
+[ext_resource type="SpriteFrames" uid="uid://ccfxptt3gm2nv" path="res://resource/anim/goose.tres" id="1_uhpsf"]
 
 [node name="Main" type="Node2D"]
+
+[node name="goose_test" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_uhpsf")

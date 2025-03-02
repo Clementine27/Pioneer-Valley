@@ -1,3 +1,2 @@
-res://test_script.gd
-res://scene/Start.tscn
 res://scene/Main.tscn
+res://resource/anim/goose.tres
