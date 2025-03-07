@@ -1,1 +1,10 @@
+PopupMenu
+MarginContainer
+HBoxContainer
+VBoxContainer
+CenterContainer
+TextureRect
+PanelContainer
+BoxContainer
 AnimatedSprite2D
+Button

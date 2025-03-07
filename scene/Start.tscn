@@ -1,9 +1,89 @@
-[gd_scene format=3 uid="uid://dtj2vcoa6xwb"]
+[gd_scene load_steps=7 format=3 uid="uid://dtj2vcoa6xwb"]
+
+[ext_resource type="Script" path="res://scripts/startScript.gd" id="1_22j4r"]
+[ext_resource type="Texture2D" uid="uid://ces65pshyuxea" path="res://texture/Screenshot Mar 6 2025 from Remove.bg.png" id="3_gec2l"]
+[ext_resource type="Texture2D" uid="uid://ds11q01ky32yq" path="res://texture/playButton.png" id="4_s7x2o"]
+[ext_resource type="Texture2D" uid="uid://hl1h4idt8bte" path="res://texture/settingsButton.png" id="5_dbbvc"]
+[ext_resource type="Texture2D" uid="uid://cfhna0e6pnffs" path="res://texture/quitButton.png" id="6_thrxk"]
+[ext_resource type="Texture2D" uid="uid://dtx13csuuu53l" path="res://texture/Lake Pixel Art Illustration.png" id="7_pdfv2"]
 
 [node name="Start" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 2.0
+offset_right = -1.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="illustration" type="TextureRect" parent="."]
+layout_mode = 0
+anchor_left = -0.000868056
+anchor_top = 0.0910494
+anchor_right = 1.00347
+anchor_bottom = 0.992284
+texture = ExtResource("7_pdfv2")
+metadata/_edit_lock_ = true
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -575.0
+offset_top = -326.0
+offset_right = 972.0
+offset_bottom = 390.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.746156, 0.895911)
+theme_override_constants/margin_left = 450
+theme_override_constants/margin_top = 215
+theme_override_constants/margin_right = 450
+theme_override_constants/margin_bottom = 215
+metadata/_edit_use_anchors_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = -30
+
+[node name="gameLogo" type="TextureRect" parent="MarginContainer/CenterContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+texture = ExtResource("3_gec2l")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = -10
+
+[node name="Button" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("4_s7x2o")
+flat = true
+icon_alignment = 1
+script = ExtResource("1_22j4r")
+
+[node name="settingsButton" type="TextureRect" parent="MarginContainer/CenterContainer/VBoxContainer/HBoxContainer"]
+z_index = 1
+layout_mode = 2
+texture = ExtResource("5_dbbvc")
+
+[node name="quitButton" type="TextureRect" parent="MarginContainer/CenterContainer/VBoxContainer/HBoxContainer"]
+z_index = 1
+layout_mode = 2
+texture = ExtResource("6_thrxk")
+
+[node name="PopupMenu" type="PopupMenu" parent="."]
+visible = true
+
+[connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/HBoxContainer/Button" to="MarginContainer/CenterContainer/VBoxContainer/HBoxContainer/Button" method="_on_pressed"]

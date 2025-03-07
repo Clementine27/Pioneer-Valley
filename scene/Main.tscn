@@ -3,6 +3,12 @@
 [ext_resource type="SpriteFrames" uid="uid://ccfxptt3gm2nv" path="res://resource/anim/goose.tres" id="1_uhpsf"]
 
 [node name="Main" type="Node2D"]
+position = Vector2(539, 312)
 
 [node name="goose_test" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, 5)
+scale = Vector2(7.3125, 7)
 sprite_frames = ExtResource("1_uhpsf")
+animation = &"walk"
+frame = 1
+frame_progress = 0.900122
