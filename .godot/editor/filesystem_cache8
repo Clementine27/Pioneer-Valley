@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741316086
+::res://::1741383224
 icon.svg::CompressedTexture2D::7190589056423357641::1740850400::1740850496::1::::<><>::
 README.md::TextFile::-1::1740850400::0::1::::<><>::
 ::res://addons/::1740850487
@@ -10,12 +10,12 @@ THIRDPARTY.md::TextFile::-1::1740850400::0::1::::<><>::
 ::res://addons/godot-git-plugin/linux/::1740850407
 ::res://addons/godot-git-plugin/macos/::1740850407
 ::res://addons/godot-git-plugin/win64/::1740850407
-::res://resource/::1741311316
-::res://resource/anim/::1741312120
-goose.tres::SpriteFrames::4924965249750417723::1741312120::0::1::::<><>::uid://bkurfsra2ie4y::::res://texture/goose.png
-::res://scene/::1741312120
-Main.tscn::PackedScene::8536726242745076333::1741312120::0::1::::<><>::uid://ccfxptt3gm2nv::::res://resource/anim/goose.tres
+::res://resource/::1741316443
+::res://resource/anim/::1741316443
+goose.tres::SpriteFrames::4924965249750417723::1741316438::0::1::::<><>::uid://bkurfsra2ie4y::::res://texture/goose.png
+::res://scene/::1741316438
+Main.tscn::PackedScene::8536726242745076333::1741316438::0::1::::<><>::uid://ccfxptt3gm2nv::::res://resource/anim/goose.tres
 Start.tscn::PackedScene::250385484328866817::1740850708::0::1::::<><>::
 ::res://script/::1740850601
-::res://texture/::1741316091
+::res://texture/::1741316095
 goose.png::CompressedTexture2D::3130638764719553586::1741316091::1741316091::1::::<><>::

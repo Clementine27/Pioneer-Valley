@@ -5,4 +5,5 @@
 [node name="Main" type="Node2D"]
 
 [node name="goose_test" type="AnimatedSprite2D" parent="."]
+position = Vector2(98, 75)
 sprite_frames = ExtResource("1_uhpsf")
