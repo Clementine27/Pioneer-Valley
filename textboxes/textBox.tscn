@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://xu0gj2jig4cv"]
+
+[ext_resource type="Texture2D" uid="uid://bjdo3jjoiblj1" path="res://textboxes/textBox.png" id="1_3lvyv"]
+[ext_resource type="Script" path="res://textboxes/text_box.gd" id="1_40q5u"]
+[ext_resource type="FontFile" uid="uid://cfqohtsb1hdnv" path="res://resource/Born2bSportyV2.ttf" id="3_3q615"]
+
+[node name="TextBox" type="MarginContainer"]
+offset_right = 75.0
+offset_bottom = 45.0
+script = ExtResource("1_40q5u")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_3lvyv")
+region_rect = Rect2(0, 0, 48, 48)
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_3q615")
+text = "Poem
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer (LetterDisplayTimer)" type="Timer" parent="."]
