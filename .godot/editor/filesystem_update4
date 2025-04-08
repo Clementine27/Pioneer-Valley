@@ -1,7 +1,5 @@
-res://scene/Start.tscn
+res://scripts/startScreen.gd
+res://scene/Menu.tscn
 res://resource/anim/goose.tres
-res://JorgeMoveScript.cs
+res://scene/Start.tscn
 res://scene/Main.tscn
-res://scripts/startScript.gd
-res://scripts/margin_container.gd
-res://scripts/settings_menu.gd

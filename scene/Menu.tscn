@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvcjuh6my6bj7"]
+
+[ext_resource type="Texture2D" uid="uid://b6mwpo5rypp5" path="res://texture/Stardew Valley First Pic.png" id="1_vfo6m"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4hmg3"]
+texture = ExtResource("1_vfo6m")
+modulate_color = Color(0.583047, 0.583047, 0.583047, 1)
+
+[node name="Menu" type="Node2D"]
+
+[node name="Panel2" type="Panel" parent="."]
+clip_contents = true
+custom_minimum_size = Vector2(64, 64)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 1096.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_4hmg3")
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_right = -8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 450
+theme_override_constants/margin_top = 215
+theme_override_constants/margin_right = 450
+theme_override_constants/margin_bottom = 215
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel2/MarginContainer"]
+layout_mode = 2

@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741364239
+::res://::1744142420
 icon.svg::CompressedTexture2D::7190589056423357641::1741307781::1741313740::1::::<><>::
 README.md::TextFile::-1::1741307781::0::1::::<><>::
 ::res://addons/::1741307781
@@ -13,13 +13,17 @@ THIRDPARTY.md::TextFile::-1::1741307781::0::1::::<><>::
 ::res://resource/::1741307781
 ::res://resource/anim/::1741313787
 goose.tres::SpriteFrames::4924965249750417723::1741313787::0::1::::<><>::uid://bkurfsra2ie4y::::res://texture/goose.png
-::res://scene/::1741319193
-Main.tscn::PackedScene::8536726242745076333::1741319193::0::1::::<><>::uid://ccfxptt3gm2nv::::res://resource/anim/goose.tres
-Start.tscn::PackedScene::250385484328866817::1741319193::0::1::::<><>::uid://de20obtu4e2lh::::res://texture/Start Button Preview.png<>res://scripts/startScript.gd<>uid://ces65pshyuxea::::res://texture/Screenshot Mar 6 2025 from Remove.bg.png
-::res://scripts/::1741315255
+::res://scene/::1744142578
+Main.tscn::PackedScene::8536726242745076333::1741386648::0::1::::<><>::uid://ccfxptt3gm2nv::::res://resource/anim/goose.tres
+Menu.tscn::PackedScene::3865097740543801742::1744142578::0::1::::<><>::
+Start.tscn::PackedScene::250385484328866817::1743999479::0::1::::<><>::res://scripts/startScreen.gd<>uid://ces65pshyuxea::::res://texture/Screenshot Mar 6 2025 from Remove.bg.png<>uid://ds11q01ky32yq::::res://texture/playButton.png<>uid://hl1h4idt8bte::::res://texture/settingsButton.png<>uid://cfhna0e6pnffs::::res://texture/quitButton.png<>uid://dtx13csuuu53l::::res://texture/Lake Pixel Art Illustration.png
+::res://scripts/::1744142578
 JorgeMoveScript.cs::CSharpScript::-1::1741313787::0::1::::<><>::
-startScript.gd::GDScript::-1::1741315255::0::1::::<>Button<>::
-::res://texture/::1741364239
+margin_container.gd::GDScript::-1::1741369003::0::1::::<>MarginContainer<>::
+settings_menu.gd::GDScript::-1::1741383191::0::1::::<>PopupMenu<>::
+startScreen.gd::GDScript::-1::1744142578::0::1::::<>Control<>::
+startScript.gd::GDScript::-1::1741367811::0::1::::<>Button<>::
+::res://texture/::1744143555
 goose.png::CompressedTexture2D::3130638764719553586::1741307781::1741313740::1::::<><>::
 Lake Pixel Art Illustration.png::CompressedTexture2D::8541959546375995163::1741364227::1741364284::1::::<><>::
 Pixelated Chair Illustration.png::CompressedTexture2D::6673569197045542750::1741317924::1741318278::1::::<><>::
@@ -28,4 +32,5 @@ playButton.png::CompressedTexture2D::8477943626420073932::1741363287::1741363575
 quitButton.png::CompressedTexture2D::5139026871452777864::1741363529::1741363575::1::::<><>::
 Screenshot Mar 6 2025 from Remove.bg.png::CompressedTexture2D::5092692158111979364::1741363958::1741363960::1::::<><>::
 settingsButton.png::CompressedTexture2D::515622738828731558::1741363248::1741363575::1::::<><>::
+Stardew Valley First Pic.png::CompressedTexture2D::134953256257246312::1744143545::1744143556::1::::<><>::
 Start Button Preview.png::CompressedTexture2D::7497298633747161881::1741319012::1741319042::1::::<><>::
