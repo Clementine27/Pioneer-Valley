@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://xfnkqodkt11t"]
+
+[ext_resource type="SpriteFrames" uid="uid://ccfxptt3gm2nv" path="res://resource/anim/goose.tres" id="1_8tkpm"]
+[ext_resource type="Script" path="res://scripts/main_character_2d.gd" id="1_lhiy6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5tggf"]
+size = Vector2(46, 37.5156)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t2ta8"]
+radius = 37.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_lhiy6")
+
+[node name="goose_test" type="AnimatedSprite2D" parent="." groups=["mainCharacter"]]
+texture_filter = 1
+scale = Vector2(3.81054, 3.8125)
+sprite_frames = ExtResource("1_8tkpm")
+animation = &"walk"
+offset = Vector2(0, -12.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+texture_filter = 1
+shape = SubResource("RectangleShape2D_5tggf")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1, 0)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_t2ta8")
