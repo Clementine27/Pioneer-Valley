@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://bokkpckm5wg1v"]
+
+[ext_resource type="Texture2D" uid="uid://frqd60fxnisn" path="res://texture/GateMHCFullVer.png" id="1_ks10s"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(17446, 11252)
+scale = Vector2(156.52, 162.762)
+texture = ExtResource("1_ks10s")
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": true,
+"i_mode": 1,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "",
+"slice": "",
+"source": "/Users/ngocbaotramnguyen/Aseprite-files/GateMHCFullVer.png"
+}
+metadata/_aseprite_wizard_source_file_hash_ = "f8f181de2aade5711a7188e68401e7cf"

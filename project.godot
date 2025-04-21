@@ -13,7 +13,6 @@ config_version=5
 config/name="Pioneer-Valley-Current"
 run/main_scene="res://scene/Main.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [dialogic]
 
@@ -29,7 +28,7 @@ project/assembly_name="Pioneer-Valley-Current"
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg", "res://addons/nklbdev.aseprite_importers/plugin.cfg")
 
 [input]
 
