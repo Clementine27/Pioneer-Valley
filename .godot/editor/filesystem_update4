@@ -1,0 +1,12 @@
+res://scene/Start.tscn
+res://resource/anim/goose.tres
+res://scene/Main.tscn
+res://scene/Title_Screen.tscn
+res://scene/MainMenu/TitleScreen.tscn
+res://scene/SceneMapMHC.tscn
+res://scripts/main_character_2d.gd
+res://scene/MHCLibrary.tscn
+res://scene/MHCGate.tscn
+res://scene/Road.tscn
+res://scene/mainCharacter2D.tscn
+res://scene/Background.tscn

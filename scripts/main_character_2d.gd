@@ -9,7 +9,7 @@ func _ready() -> void:
 	add_to_group("mainCharacter")
 	print("Player in groups:", get_groups()) 
 	
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	#Animations:
 
 	var input_direction = Vector2.ZERO # Initialize to zero

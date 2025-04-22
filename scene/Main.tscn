@@ -14,7 +14,6 @@ y_sort_enabled = true
 position = Vector2(873, 1177)
 
 [node name="Hing1" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
-visible = false
 position = Vector2(3058, 3244)
 
 [node name="Hint3" parent="environmentalCollision" instance=ExtResource("2_alxhg")]

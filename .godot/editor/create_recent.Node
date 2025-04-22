@@ -1,8 +1,8 @@
+TileMapLayer
+TileMap
 RemoteTransform2D
 Camera2D
-TileMap
 CollisionPolygon2D
-TileMapLayer
 Sprite2D
 StaticBody2D
 Node2D
