@@ -1,21 +1,33 @@
-[gd_scene load_steps=3 format=3 uid="uid://dtvivs5hiped6"]
+[gd_scene load_steps=4 format=3 uid="uid://dtvivs5hiped6"]
 
-[ext_resource type="PackedScene" uid="uid://tm5h33ewkwup" path="res://scene/cameraLimit.tscn" id="1_bfktn"]
+[ext_resource type="PackedScene" uid="uid://bi0jfgyf6mogf" path="res://scene/SceneMapMHC.tscn" id="1_y4qh0"]
 [ext_resource type="PackedScene" uid="uid://did7g6thjvjht" path="res://scene/collisionHint.tscn" id="2_alxhg"]
+[ext_resource type="PackedScene" uid="uid://xfnkqodkt11t" path="res://scene/mainCharacter2D.tscn" id="2_c1ll5"]
 
 [node name="Main" type="Node2D"]
 
-[node name="Camera" parent="." instance=ExtResource("1_bfktn")]
+[node name="Node2D" parent="." instance=ExtResource("1_y4qh0")]
 
 [node name="environmentalCollision" type="Node2D" parent="."]
 y_sort_enabled = true
 
+[node name="CharacterBody2D" parent="environmentalCollision" instance=ExtResource("2_c1ll5")]
+position = Vector2(2154, 3119)
+
+[node name="Camera2D" type="Camera2D" parent="environmentalCollision/CharacterBody2D"]
+position = Vector2(2, -27)
+limit_left = 1
+limit_top = -10
+limit_right = 3584
+limit_bottom = 3585
+position_smoothing_enabled = true
+editor_draw_limits = true
+
+[node name="Hint1" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
+position = Vector2(3058, 3244)
+
 [node name="Hint2" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
 position = Vector2(873, 1177)
-
-[node name="Hing1" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
-visible = false
-position = Vector2(3058, 3244)
 
 [node name="Hint3" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
 position = Vector2(398, 2904)

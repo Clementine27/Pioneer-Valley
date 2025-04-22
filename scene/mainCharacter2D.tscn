@@ -4,12 +4,12 @@
 [ext_resource type="Script" path="res://scripts/main_character_2d.gd" id="1_lhiy6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5tggf"]
-size = Vector2(214, 131.5)
+size = Vector2(177, 131.5)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_t2ta8"]
-radius = 144.031
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ycca3"]
+size = Vector2(177, 131)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["mainCharacter"]]
 script = ExtResource("1_lhiy6")
 
 [node name="goose_test" type="AnimatedSprite2D" parent="." groups=["mainCharacter"]]
@@ -21,11 +21,11 @@ offset = Vector2(0, -12.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 texture_filter = 1
-position = Vector2(-96, 10)
+position = Vector2(-77.5, -4)
 shape = SubResource("RectangleShape2D_5tggf")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-76, -50)
-shape = SubResource("CircleShape2D_t2ta8")
+position = Vector2(-78.5, -3.5)
+shape = SubResource("RectangleShape2D_ycca3")
