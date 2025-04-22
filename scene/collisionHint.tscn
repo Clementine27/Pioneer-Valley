@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/collision_hint.gd" id="1_go84p"]
 [ext_resource type="Texture2D" uid="uid://drh4lphm1i2kn" path="res://texture/hint-char1st.png" id="2_h0jc7"]
 [ext_resource type="PackedScene" uid="uid://xu0gj2jig4cv" path="res://textboxes/textBox.tscn" id="3_4wo3j"]
-[ext_resource type="Script" path="res://scene/area_2d.gd" id="4_w7yci"]
+[ext_resource type="Script" path="res://scripts/area_2d.gd" id="4_w7yci"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ix3o"]
 size = Vector2(214, 93)

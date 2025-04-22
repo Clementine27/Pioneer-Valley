@@ -1,0 +1,93 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgysrhflty1bi"]
+
+[ext_resource type="Script" path="res://scripts/title_screen_script.gd" id="1_t2v87"]
+[ext_resource type="Texture2D" uid="uid://ch7so3yojg0hk" path="res://texture/title_screen.png" id="2_l58up"]
+[ext_resource type="FontFile" uid="uid://yt2uxh6nvfqb" path="res://Pixel Game.otf" id="3_sjrqc"]
+
+[node name="Main_Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t2v87")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 0.937888)
+texture = ExtResource("2_l58up")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.989992, 1.01698)
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 80
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = -20
+
+[node name="Label" type="Label" parent="MarginContainer/CenterContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/line_spacing = -64
+theme_override_constants/outline_size = 64
+theme_override_fonts/font = ExtResource("3_sjrqc")
+theme_override_font_sizes/font_size = 240
+text = "PIONEER  VALLEY"
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer/CenterContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/CenterContainer/VBoxContainer2/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="Start" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer2/CenterContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_sjrqc")
+theme_override_font_sizes/font_size = 100
+button_mask = 7
+text = "START "
+icon_alignment = 1
+
+[node name="Control" type="Control" parent="MarginContainer/CenterContainer/VBoxContainer2/CenterContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Exit" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer2/CenterContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_sjrqc")
+theme_override_font_sizes/font_size = 100
+text = "EXIT
+"
+
+[node name="Seperator" type="Control" parent="MarginContainer/CenterContainer/VBoxContainer2/CenterContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Menu" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer2/CenterContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_sjrqc")
+theme_override_font_sizes/font_size = 100
+text = "MENU"
+
+[connection signal="button_down" from="MarginContainer/CenterContainer/VBoxContainer2/CenterContainer/HBoxContainer/Start" to="." method="_on_start_button_down"]
+[connection signal="button_down" from="MarginContainer/CenterContainer/VBoxContainer2/CenterContainer/HBoxContainer/Exit" to="." method="_on_exit_button_down"]
+[connection signal="button_down" from="MarginContainer/CenterContainer/VBoxContainer2/CenterContainer/HBoxContainer/Menu" to="." method="_on_menu_button_down"]
