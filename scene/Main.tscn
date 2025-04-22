@@ -9,7 +9,10 @@
 
 [node name="Node2D" parent="." instance=ExtResource("1_y4qh0")]
 texture_filter = 1
-position = Vector2(-18, -3)
+position = Vector2(7, -3)
+
+[node name="Camera2D" type="Camera2D" parent="Node2D"]
+position = Vector2(1954, 3040)
 
 [node name="environmentalCollision" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -22,6 +25,7 @@ y_sort_enabled = true
 position = Vector2(1967, 3040)
 
 [node name="Hing1" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
+visible = false
 position = Vector2(3058, 3244)
 
 [node name="Hint3" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
