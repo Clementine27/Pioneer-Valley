@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dtvivs5hiped6"]
 
-[ext_resource type="PackedScene" uid="uid://dbadyd4pxf411" path="res://scene/cameraLimit.tscn" id="1_bfktn"]
+[ext_resource type="PackedScene" uid="uid://tm5h33ewkwup" path="res://scene/cameraLimit.tscn" id="1_bfktn"]
 [ext_resource type="PackedScene" uid="uid://did7g6thjvjht" path="res://scene/collisionHint.tscn" id="2_alxhg"]
 
 [node name="Main" type="Node2D"]
