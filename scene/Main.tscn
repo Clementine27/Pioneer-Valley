@@ -14,17 +14,17 @@ position = Vector2(-18, -3)
 [node name="environmentalCollision" type="Node2D" parent="."]
 y_sort_enabled = true
 
-[node name="Hint2" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
+[node name="StaticBody2" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
 position = Vector2(732, 1046)
 
-[node name="Jorge2D" parent="environmentalCollision" instance=ExtResource("2_c1ll5")]
+[node name="CharacterBody2D" parent="environmentalCollision" instance=ExtResource("2_c1ll5")]
 y_sort_enabled = true
 position = Vector2(1967, 3040)
 
-[node name="Hing1" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
+[node name="StaticBody" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
 position = Vector2(3058, 3244)
 
-[node name="Hint3" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
+[node name="StaticBody3" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
 position = Vector2(398, 2904)
 
 [node name="Gate" parent="." instance=ExtResource("4_r0bta")]
