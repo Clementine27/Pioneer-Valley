@@ -1,28 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://dtvivs5hiped6"]
+[gd_scene load_steps=3 format=3 uid="uid://dtvivs5hiped6"]
 
-[ext_resource type="PackedScene" uid="uid://cmvhcrkp2vww5" path="res://scene/SceneMapMHC.tscn" id="1_y4qh0"]
+[ext_resource type="PackedScene" uid="uid://dbadyd4pxf411" path="res://scene/cameraLimit.tscn" id="1_bfktn"]
 [ext_resource type="PackedScene" uid="uid://did7g6thjvjht" path="res://scene/collisionHint.tscn" id="2_alxhg"]
-[ext_resource type="PackedScene" uid="uid://xfnkqodkt11t" path="res://scene/mainCharacter2D.tscn" id="2_c1ll5"]
-[ext_resource type="PackedScene" uid="uid://bokkpckm5wg1v" path="res://scene/MHCGate.tscn" id="4_r0bta"]
 
 [node name="Main" type="Node2D"]
 
-[node name="Node2D" parent="." instance=ExtResource("1_y4qh0")]
-texture_filter = 1
-position = Vector2(7, -3)
-
-[node name="Camera2D" type="Camera2D" parent="Node2D"]
-position = Vector2(1954, 3040)
+[node name="Camera" parent="." instance=ExtResource("1_bfktn")]
 
 [node name="environmentalCollision" type="Node2D" parent="."]
 y_sort_enabled = true
 
 [node name="Hint2" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
-position = Vector2(732, 1046)
-
-[node name="Jorge2D" parent="environmentalCollision" instance=ExtResource("2_c1ll5")]
-y_sort_enabled = true
-position = Vector2(1967, 3040)
+position = Vector2(873, 1177)
 
 [node name="Hing1" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
 visible = false
@@ -30,8 +19,3 @@ position = Vector2(3058, 3244)
 
 [node name="Hint3" parent="environmentalCollision" instance=ExtResource("2_alxhg")]
 position = Vector2(398, 2904)
-
-[node name="Gate" parent="." instance=ExtResource("4_r0bta")]
-texture_filter = 1
-position = Vector2(-18729, -3722)
-scale = Vector2(0.5, 0.5)
